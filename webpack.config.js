@@ -1,11 +1,15 @@
+<<<<<<< HEAD
 const path = require('path');
 const webpack = require('webpack');
 const BundleAnalyzerPlugin =
   require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+=======
+const webpack = require("webpack");
+const path = require("path");
+>>>>>>> f44e1306a035ac14abd6804654860c192f9b7726
 
-//create the main configuration object
-//requires 3 objects: entry, output, and mode
 module.exports = {
+<<<<<<< HEAD
   entry: {
     app: './assets/js/script.js',
     events: './assets/js/events.js',
@@ -52,3 +56,18 @@ module.exports = {
   ],
   mode: 'development',
 };
+=======
+  entry: "./assets/js/script.js",
+  output: {
+    path: path.join(__dirname + "/dist"),
+    filename: "main.bundle.js"
+  },
+  plugins: [
+  new webpack.ProvidePlugin({
+    $: "jquery",
+    jQuery: "jquery"
+  }),
+  ],
+  mode: "development"
+};
+>>>>>>> f44e1306a035ac14abd6804654860c192f9b7726
