@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const BundleAnalyzerPlugin =
-  require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 //create the main configuration object
 //requires 3 objects: entry, output, and mode
